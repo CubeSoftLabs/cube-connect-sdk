@@ -99,7 +99,7 @@ class OrderController extends Controller
 
 ## Error Handling
 
-The SDK throws specific exceptions for each error type. All exceptions include an `errorCode` property matching the [unified API error codes](https://developer.cubeconnect.io/api/errors):
+The SDK throws specific exceptions for each error type. All exceptions include an `errorCode` property matching the [unified API error codes](https://docs.cubeconnect.io/api/errors):
 
 ```php
 use CubeConnect\Facades\CubeConnect;
@@ -164,7 +164,7 @@ The package follows SOLID principles:
 
 ## Documentation
 
-Full API documentation is available at [developer.cubeconnect.io](https://developer.cubeconnect.io).
+Full API documentation is available at [docs.cubeconnect.io](https://docs.cubeconnect.io).
 
 ## License
 

@@ -10,7 +10,7 @@
         "api",
         "sdk"
     ],
-    "homepage": "https://developer.cubeconnect.io",
+    "homepage": "https://docs.cubeconnect.io",
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +22,7 @@
     "support": {
         "issues": "https://github.com/CubeSoftLabs/cube-connect-sdk/issues",
         "source": "https://github.com/CubeSoftLabs/cube-connect-sdk",
-        "docs": "https://developer.cubeconnect.io"
+        "docs": "https://docs.cubeconnect.io"
     },
     "require": {
         "php": "^8.1",
