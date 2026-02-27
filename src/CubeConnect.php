@@ -81,7 +81,7 @@ class CubeConnect implements Messaging
         return $this->send([
             'phone' => $phone,
             'message_type' => 'text',
-            'data' => ['body' => $body],
+            'data' => ['text' => $body],
         ]);
     }
 
@@ -95,6 +95,7 @@ class CubeConnect implements Messaging
      * @param  string  $phone
      * @param  string  $name
      * @param  array<int, string>  $params
+     * @param  string  $languageCode
      * @return \CubeConnect\DTOs\MessageResponse
      *
      * @throws \CubeConnect\Exceptions\AuthenticationException
@@ -102,12 +103,24 @@ class CubeConnect implements Messaging
      * @throws \CubeConnect\Exceptions\RateLimitException
      * @throws \CubeConnect\Exceptions\CubeConnectException
      */
-    public function sendTemplate(string $phone, string $name, array $params = []): MessageResponse
+    public function sendTemplate(string $phone, string $name, array $params = [], string $languageCode = 'en_US'): MessageResponse
     {
-        $data = ['name' => $name];
+        $data = [
+            'name' => $name,
+            'language_code' => $languageCode,
+        ];
 
         if (! empty($params)) {
-            $data['params'] = array_values($params);
+            // تحويل المعاملات البسيطة إلى صيغة components المطلوبة من Meta
+            $data['components'] = [
+                [
+                    'type' => 'body',
+                    'parameters' => array_map(fn ($value) => [
+                        'type' => 'text',
+                        'text' => (string) $value,
+                    ], array_values($params)),
+                ],
+            ];
         }
 
         return $this->send([

@@ -26,6 +26,7 @@ interface Messaging
      * @param  string  $phone
      * @param  string  $name
      * @param  array<int, string>  $params
+     * @param  string  $languageCode
      * @return \CubeConnect\DTOs\MessageResponse
      *
      * @throws \CubeConnect\Exceptions\AuthenticationException
@@ -33,7 +34,7 @@ interface Messaging
      * @throws \CubeConnect\Exceptions\RateLimitException
      * @throws \CubeConnect\Exceptions\CubeConnectException
      */
-    public function sendTemplate(string $phone, string $name, array $params = []): MessageResponse;
+    public function sendTemplate(string $phone, string $name, array $params = [], string $languageCode = 'en_US'): MessageResponse;
 
     /**
      * Check the platform health status.

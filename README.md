@@ -66,9 +66,17 @@ $response = CubeConnect::sendTemplate(
     'order_confirmation',
     ['ORD-1234', '500 SAR']
 );
+
+// With explicit language code (default: en_US)
+$response = CubeConnect::sendTemplate(
+    '+966501234567',
+    'order_confirmation',
+    ['ORD-1234', '500 SAR'],
+    'ar'
+);
 ```
 
-Parameters map to `{{1}}`, `{{2}}`, etc. in the template body. Templates can be sent at any time.
+Parameters map to `{{1}}`, `{{2}}`, etc. in the template body. The SDK automatically converts them to the Meta components format. Templates can be sent at any time.
 
 ### Health Check
 
