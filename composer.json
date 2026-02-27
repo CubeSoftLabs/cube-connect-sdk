@@ -1,5 +1,5 @@
 {
-    "name": "cubeconnect/laravel",
+    "name": "cubesoftware/cube-connect-sdk",
     "description": "Official Laravel SDK for CubeConnect WhatsApp Business Platform",
     "type": "library",
     "keywords": [

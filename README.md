@@ -1,9 +1,9 @@
 # CubeConnect for Laravel
 
 <p>
-<a href="https://packagist.org/packages/cubeconnect/laravel"><img src="https://img.shields.io/packagist/v/cubeconnect/laravel.svg" alt="Latest Version"></a>
-<a href="https://packagist.org/packages/cubeconnect/laravel"><img src="https://img.shields.io/packagist/l/cubeconnect/laravel.svg" alt="License"></a>
-<a href="https://packagist.org/packages/cubeconnect/laravel"><img src="https://img.shields.io/packagist/php-v/cubeconnect/laravel.svg" alt="PHP Version"></a>
+<a href="https://packagist.org/packages/cubesoftware/cube-connect-sdk"><img src="https://img.shields.io/packagist/v/cubesoftware/cube-connect-sdk.svg" alt="Latest Version"></a>
+<a href="https://packagist.org/packages/cubesoftware/cube-connect-sdk"><img src="https://img.shields.io/packagist/l/cubesoftware/cube-connect-sdk.svg" alt="License"></a>
+<a href="https://packagist.org/packages/cubesoftware/cube-connect-sdk"><img src="https://img.shields.io/packagist/php-v/cubesoftware/cube-connect-sdk.svg" alt="PHP Version"></a>
 </p>
 
 Official Laravel SDK for the [CubeConnect](https://cubeconnect.io) WhatsApp Business Platform.
@@ -13,7 +13,7 @@ Official Laravel SDK for the [CubeConnect](https://cubeconnect.io) WhatsApp Busi
 Install the package via Composer:
 
 ```bash
-composer require cubeconnect/laravel
+composer require cubesoftware/cube-connect-sdk
 ```
 
 The package auto-discovers its service provider and facade. No manual registration required.
