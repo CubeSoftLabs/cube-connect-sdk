@@ -1,0 +1,52 @@
+{
+    "name": "cubeconnect/laravel",
+    "description": "Official Laravel SDK for CubeConnect WhatsApp Business Platform",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "whatsapp",
+        "cubeconnect",
+        "messaging",
+        "api",
+        "sdk"
+    ],
+    "homepage": "https://developer.cubeconnect.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CubeConnect",
+            "email": "dev@cubeconnect.io",
+            "homepage": "https://cubeconnect.io"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/CubeSoftLabs/cube-connect-sdk/issues",
+        "source": "https://github.com/CubeSoftLabs/cube-connect-sdk",
+        "docs": "https://developer.cubeconnect.io"
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CubeConnect\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CubeConnect\\CubeConnectServiceProvider"
+            ],
+            "aliases": {
+                "CubeConnect": "CubeConnect\\Facades\\CubeConnect"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
