@@ -169,3 +169,5 @@ Full API documentation is available at [developer.cubeconnect.io](https://develo
 ## License
 
 CubeConnect for Laravel is open-sourced software licensed under the [MIT license](LICENSE).
+
+Copyright © 2026 [Cube Software](https://cubeconnect.io) (CubeSoftLabs). All rights reserved.
