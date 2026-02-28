@@ -1,11 +1,11 @@
 {
-    "name": "cubesoftware/cube-connect-sdk",
+    "name": "cubesoftware/cube-connect-sdk-php",
     "description": "Official Laravel SDK for CubeConnect WhatsApp Business Platform",
     "type": "library",
     "keywords": [
         "cubeconnect",
         "cubesoftware",
-        "cube-connect-sdk"
+        "cube-connect-sdk-php"
     ],
     "homepage": "https://docs.cubeconnect.io",
     "license": "MIT",
